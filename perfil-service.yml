@@ -1,11 +1,12 @@
 server:
-  port: ${PORT:8873}
+  port: ${PORT:8863}
+  
 message: Configuracion de cajero en el servidor levantado!
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     password: 12345678
-    url: jdbc:mysql://localhost:3306/bdpy?serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/crudcloud?serverTimezone=UTC
     username: root
   jpa:
     hibernate:
@@ -13,4 +14,4 @@ spring:
       database-platform: org.hibernate.dialect.MySQLDialect
   cloud:
     config:
-      uri: http://localhost.8870
+      uri: http://localhost.8860
