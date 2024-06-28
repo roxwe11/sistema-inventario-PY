@@ -1,5 +1,5 @@
 server:
-   port: ${PORT:8878}
+   port: ${PORT:8879}
 message: Configuracion de tipo en el servidor levantado!
 spring:
   datasource:
